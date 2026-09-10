@@ -69,43 +69,43 @@ const nextBtn =
 
 const slides = [
     {
-        image: "image/Gallery1.jpg",
+        image: "images/Gallery1.jpg",
         title: "A Special Moment",
         description: "One of my favourite moments."
     },
 
     {
-        image: "image/Gallery2.jpg",
+        image: "images/Gallery2.jpg",
         title: "Beautiful Memories",
         description: "A moment that makes me smile."
     },
 
     {
-        image: "image/Gallery3.jpg",
+        image: "images/Gallery3.jpg",
         title: "Special Memories",
         description: "A special part of my journey."
     },
 
     {
-        image: "image/Gallery4.jpg",
+        image: "images/Gallery4.jpg",
         title: "A Day to Remember",
         description: "A memory I will always treasure."
     },
 
     {
-        image: "image/Gallery5.jpg",
+        image: "images/Gallery5.jpg",
         title: "Family & Happiness",
         description: "Moments shared with people I love."
     },
 
     {
-        image: "image/Gallery6.jpg",
+        image: "images/Gallery6.jpg",
         title: "Good Times",
         description: "Enjoying the simple moments in life."
     },
 
     {
-        image: "image/Gallery7.jpg",
+        image: "images/Gallery7.jpg",
         title: "Making Memories",
         description: "Another beautiful moment from my journey."
     },
@@ -117,25 +117,25 @@ const slides = [
     },
 
     {
-        image: "image/Gallery9.jpg",
+        image: "images/Gallery9.jpg",
         title: "Special Times",
         description: "A beautiful moment from my journey."
     },
 
     {
-        image: "image/Gallery10.jpg",
+        image: "images/Gallery10.jpg",
         title: "Moments of Joy",
         description: "A moment filled with happiness."
     },
 
     {
-        image: "image/Gallery11.jpg",
+        image: "images/Gallery11.jpg",
         title: "Memories I Love",
         description: "A memory that will always have a special place in my heart."
     },
 
     {
-        image: "image/Gallery12.jpg",
+        image: "images/Gallery12.jpg",
         title: "A Beautiful Memory",
         description: "One more moment worth remembering."
     }
