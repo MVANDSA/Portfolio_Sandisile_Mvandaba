@@ -1268,154 +1268,117 @@ nav a.active {
 
 /* ---------- CONTACT ---------- */
 
-.contact-section {
-
-    display: grid;
-
-    grid-template-columns: 0.8fr 1.2fr;
-
-    gap: 70px;
-
-    align-items: start;
-}
-
-
-.contact-info h2 {
-
-    font-family: "Playfair Display", serif;
-
-    font-size: clamp(36px, 4vw, 50px);
-
-    line-height: 1.2;
-
-    margin-bottom: 18px;
-}
-
-
-.contact-info > p:not(.eyebrow) {
-
-    color: var(--muted);
-
-    margin-bottom: 30px;
-}
-
-
-.contact-item {
-
-    display: flex;
-
-    gap: 15px;
-
-    align-items: center;
-
-    margin-bottom: 20px;
-}
-
-
-.contact-item > span {
-
-    width: 50px;
-
-    height: 50px;
-
-    display: flex;
-
-    align-items: center;
-
-    justify-content: center;
-
-    background: var(--lavender);
-
-    border-radius: 14px;
-
-    font-size: 20px;
-}
-
-
-.contact-item p {
-
-    color: var(--muted);
-
-    font-size: 14px;
-}
-
-
-.contact-form {
-
-    padding: 35px;
-
-    background: var(--white);
-
-    border: 1px solid var(--border);
-
-    border-radius: 25px;
-
-    box-shadow: var(--shadow);
-}
-
-
 .form-group {
-    margin-bottom: 20px;
+  margin-bottom: 18px;
 }
 
-
-.form-group label {
-
-    display: block;
-
-    font-weight: 600;
-
-    font-size: 14px;
-
-    margin-bottom: 7px;
+label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 6px;
+  font-size: 0.92rem;
 }
 
-
-.form-group input,
-.form-group textarea {
-
-    width: 100%;
-
-    padding: 14px 16px;
-
-    border: 1px solid var(--border);
-
-    border-radius: 13px;
-
-    background: var(--lavender-light);
-
-    color: var(--text);
-
-    outline: none;
-
-    transition: var(--transition);
+input, textarea, select {
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 10px;
+  border: 1px solid var(--clr-border);
+  background: var(--clr-bg);
+  color: var(--clr-text);
+  font-family: var(--font-body);
+  font-size: 1rem;
+  transition: border-color var(--transition), box-shadow var(--transition);
 }
 
-
-.form-group input:focus,
-.form-group textarea:focus {
-
-    border-color: var(--purple);
-
-    box-shadow: 0 0 0 4px rgba(139, 111, 196, 0.10);
+input:focus, textarea:focus, select:focus {
+  outline: none;
+  border-color: var(--clr-primary);
+  box-shadow: 0 0 0 3px rgba(108, 92, 231, 0.18);
 }
 
-
-.form-group textarea {
-    resize: vertical;
+.error-text {
+  color: #e74c3c;
+  font-size: 0.82rem;
+  margin-top: 5px;
+  min-height: 1.1em;
+  display: block;
 }
 
-
-.form-message {
-
-    margin-top: 15px;
-
-    color: var(--purple);
-
-    font-weight: 600;
-
-    font-size: 14px;
+#formStatus {
+  margin-top: 16px;
+  padding: 12px 16px;
+  border-radius: 10px;
+  font-weight: 500;
+  display: none;
 }
+
+#formStatus.show { display: block; }
+#formStatus.success { background: #d4f8e8; color: #1a7a4c; }
+#formStatus.fail { background: #fde2e2; color: #b02a2a; }
+
+.socials {
+  display: flex;
+  gap: 14px;
+  margin-top: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.socials a {
+  background: var(--clr-bg);
+  border: 1px solid var(--clr-border);
+  padding: 10px 18px;
+  border-radius: 999px;
+  font-weight: 600;
+  color: var(--clr-text);
+}
+
+.socials a:hover {
+  background: var(--clr-primary);
+  color: #fff;
+}
+
+/* ---------- Clock ---------- */
+.clock-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--clr-bg);
+  border: 1px solid var(--clr-border);
+  padding: 8px 16px;
+  border-radius: 999px;
+  font-weight: 600;
+  font-family: var(--font-heading);
+}
+
+/* ---------- Show/hide toggle ---------- */
+.toggle-btn {
+  background: var(--clr-primary);
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 999px;
+  cursor: pointer;
+  font-weight: 600;
+  margin: 12px 0;
+  transition: background var(--transition), transform var(--transition);
+}
+
+.toggle-btn:hover {
+  background: var(--clr-primary-dark);
+  transform: translateY(-2px);
+}
+
+.hidden-content {
+  display: none;
+  animation: fadeIn 0.4s ease;
+}
+
+.hidden-content.show {
+  display: block;
+}
+
 
 
 /* ---------- FOOTER ---------- */
